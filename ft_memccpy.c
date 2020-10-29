@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/09 19:52:08 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/28 17:36:37 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/29 23:59:03 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		*tempd = *temps;
 		if (*temps == (unsigned char)c)
-			return (tempd + 1);
+			return ((void *)tempd + 1);
 		temps++;
 		tempd++;
 		n--;

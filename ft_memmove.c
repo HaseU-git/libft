@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/10 22:21:45 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/29 14:45:48 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/30 00:02:36 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		ft_memcpy(d, s, len);
 	return (d);
 }
-
-
-char *str = "abcdefg"
-s : &str[0] "abcdefg"
-d : &str[4] "cdefg"
-
-
-
-
-

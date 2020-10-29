@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/19 12:23:34 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/28 22:32:31 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/30 00:15:18 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*ret;
 	unsigned int	i;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	i = 0;
 	size = ft_strlen(s);
