@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/28 00:37:21 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/28 22:21:47 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/29 23:37:13 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char		**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	if (!(ret = (char **)malloc(sizeof(char *) * count_array_len(s, c) + 1)))
+	if (!(ret = (char **)malloc(sizeof(char *) * (count_array_len(s, c) + 1))))
 		return (NULL);
 	fill_ret(s, c, ret);
 	return (ret);
