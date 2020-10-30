@@ -6,7 +6,7 @@
 #    By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/11 03:11:35 by yhasegaw          #+#    #+#              #
-#    Updated: 2020/10/30 17:32:51 by yhasegaw         ###   ########.fr        #
+#    Updated: 2020/10/31 03:33:07 by yhasegaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,6 +59,7 @@ SRCS := ft_memset.c\
 	ft_lstclear.c\
 	ft_lstiter.c\
 	ft_lstmap.c\
+
 OBJS := $(SRCS:.c=.o)
 
 all: $(NAME)

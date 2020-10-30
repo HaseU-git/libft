@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 12:04:01 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/30 12:13:13 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/31 03:42:40 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*ret;
 
-	if(!(ret = (t_list *)malloc(sizeof(t_list))))
+	if (!(ret = (t_list *)malloc(sizeof(t_list))))
 		return (NULL);
 	ret->content = content;
 	ret->next = NULL;

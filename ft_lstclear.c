@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 17:11:53 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/30 17:27:01 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/31 03:43:04 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*temp;
 	t_list	*ptr;
 
-	if(!lst)
+	if (!lst)
 		return ;
 	ptr = *lst;
 	while (ptr)
