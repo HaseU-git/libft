@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 17:31:57 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/31 03:43:22 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/31 04:20:18 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	if (!lst)
 		return (NULL);
 	ret = ft_lstnew(f(lst->content));
+	lst = lst->next;
 	while (lst)
 	{
 		temp = ft_lstnew(f(lst->content));

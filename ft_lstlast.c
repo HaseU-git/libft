@@ -6,7 +6,7 @@
 /*   By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/30 14:06:05 by yhasegaw          #+#    #+#             */
-/*   Updated: 2020/10/30 14:11:56 by yhasegaw         ###   ########.fr       */
+/*   Updated: 2020/10/31 04:25:27 by yhasegaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 t_list	*ft_lstlast(t_list *lst)
 {
-	if (lst)
-		while (lst->next)
-			lst = lst->next;
+	if (!lst)
+		return (NULL);
+	while (lst->next)
+	{
+		lst = lst->next;
+	}
 	return (lst);
 }
