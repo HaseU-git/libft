@@ -6,7 +6,7 @@
 #    By: yhasegaw <yhasegaw@student.42.jp>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/10/11 03:11:35 by yhasegaw          #+#    #+#              #
-#    Updated: 2020/10/31 03:33:07 by yhasegaw         ###   ########.fr        #
+#    Updated: 2020/11/01 01:28:56 by yhasegaw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,6 +60,18 @@ SRCS := ft_memset.c\
 	ft_lstiter.c\
 	ft_lstmap.c\
 
+BONUS_SRCS := ft_lstnew.c\
+    ft_lstadd_front.c\
+    ft_lstsize.c\
+    ft_lstlast.c\
+    ft_lstadd_back.c\
+    ft_lstdelone.c\
+    ft_lstclear.c\
+    ft_lstiter.c\
+    ft_lstmap.c\
+
+BONUS_OBJS := $(BONUS_SRCS:.c=.o)
+
 OBJS := $(SRCS:.c=.o)
 
 all: $(NAME)
@@ -78,4 +90,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+bonus: all $(BONUS_OBJS)
+	$(AR) $(NAME) $(BONUS_OBJS)
+
+.PHONY: all clean fclean re bonus
