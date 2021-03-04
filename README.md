@@ -90,3 +90,7 @@ make re     #再コンパイル
 ```
 
 ## 開発環境
+- MacBook Pro (15-inch, 2018)
+- macOS Big Sur Version 11.2.1
+- Apple clang version 12.0.0 (clang-1200.0.32.29)
+- GNU Make 3.81
