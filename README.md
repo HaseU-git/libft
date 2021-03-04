@@ -67,7 +67,7 @@ int main()
 {
   //ここに使用したい関数を書く。
   //（例）
-  printf("%s", ft_strjoin("hello ", "world!!\n"));
+  printf("%s", ft_strjoin("hello ", "world!!\\n"));
 }' > main.c
 ```
 
