@@ -59,7 +59,7 @@ make
 そうすることで、それぞれの関数が書かれたcファイルがオブジェクトファイルにコンパイルされ、その後各oファイルを元に`libft.a`という名前のアーカイブファイルが作成されます。  
 
 次に、関数を使用するためのmainファイルを作成します。  
-```c
+```shell
 touch main.c
 echo '#include "libft.h"
 #include <stdio.h>
