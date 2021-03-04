@@ -53,7 +53,7 @@ malloc、free、writeなどの低レベルの関数などを使用し、メモ�
 以下のコマンドを順次実行してください。
 ```shell
 git clone https://github.com/HaseU-git/libft.git
-cd libft
+cd libft/project
 make
 ```
 そうすることで、それぞれの関数が書かれたcファイルがオブジェクトファイルにコンパイルされ、その後各oファイルを元に`libft.a`という名前のアーカイブファイルが作成されます。  
